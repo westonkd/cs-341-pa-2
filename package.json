@@ -1,19 +1,27 @@
 {
-  "name": "personal_assignment",
+  "name": "cs-341-pa-2",
   "version": "1.0.0",
-  "description": "Lesson one personal assignment (Hello, world)",
-  "main": "app.js",
+  "description": "CSE 341 Personal Project Two",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon --inspect app.js",
-    "lint": "eslint",
-    "deploy": "git push heroku main"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westonkd/cs-341-pa-2.git"
   },
   "author": "Weston Dransfield",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westonkd/cs-341-pa-2/issues"
+  },
+  "homepage": "https://github.com/westonkd/cs-341-pa-2#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongodb": "^4.9.0"
   },
   "devDependencies": {
     "eslint": "^8.22.0",
