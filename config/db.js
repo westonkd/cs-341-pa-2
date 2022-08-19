@@ -4,6 +4,8 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 let _client;
 
 const password = process.env.DB_PASSWORD;
+const dbName = process.env.DB_NAME;
+
 const uri = `mongodb+srv://westonkd:${password}@cluster0.vnxduoo.mongodb.net/?retryWrites=true&w=majority`;
 
 const initDB = async () => {
@@ -19,13 +21,13 @@ const initDB = async () => {
   }
 };
 
-const client = () => {
+const database = () => {
   if (!_client) throw Error("No DB connection initialize. Please call init()");
 
-  return _client;
+  return _client.db(dbName);
 };
 
 module.exports = {
   initDB,
-  client,
+  database,
 };
