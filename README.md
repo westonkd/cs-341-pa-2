@@ -9,6 +9,8 @@ Please refrain from viewing this example until you have spend an hour working on
 3. Set your DB_PASSWORD in .env 
 4. Start the application: `npm start`
 
+Try hitting `http://localhost:8080/contacts/63044b72a13ed65419bde399`
+
 ## Developing
 Use the `watch` script to hot-reload the server as code changes.
 

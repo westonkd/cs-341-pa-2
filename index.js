@@ -8,6 +8,9 @@ const app = express();
 const legoSetRoutes = require("./config/routes/legoSets");
 app.use("/legoSets", legoSetRoutes(express.Router()));
 
+const contactsRoutes = require("./config/routes/contacts");
+app.use("/contacts", contactsRoutes(express.Router()));
+
 initDB().then(() => {
   app.listen(appConfig.port, () => {
     console.log(`Application listening on port ${appConfig.port}`);
